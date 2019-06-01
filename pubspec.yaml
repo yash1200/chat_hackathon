@@ -54,6 +54,8 @@ flutter:
   - assets/cover.jpg
   - assets/cover2.jpg
   - assets/ic_launcher.png
+  - assets/pp.jpeg
+  - assets/pp2.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

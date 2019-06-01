@@ -76,7 +76,9 @@ class _ChatState extends State<Chat> {
             ),
             subtitle: Text(
               document['lastmessage'],
-              style: TextStyle(color: Colors.black,),
+              style: TextStyle(
+                color: Colors.black,
+              ),
             ),
             isThreeLine: true,
             leading: Material(

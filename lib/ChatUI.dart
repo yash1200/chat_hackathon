@@ -8,6 +8,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 class ChatUI extends StatefulWidget {
   String chatUserId, userId, customId, photoUrl;
   File file;
+
   ChatUI(
       {Key key,
       @required this.chatUserId,
@@ -94,9 +95,10 @@ class _ChatUIState extends State<ChatUI> {
                 width: 48.0,
                 height: 48.0,
                 child: new IconButton(
-                    icon: Icon(Icons.image), onPressed: () {
+                    icon: Icon(Icons.image),
+                    onPressed: () {
                       _selectImage(context);
-                }),
+                    }),
               ),
               new Flexible(
                 child: new TextField(
@@ -127,6 +129,7 @@ class _ChatUIState extends State<ChatUI> {
       ),
     );
   }
+
   _selectImage(BuildContext parentContext) async {
     File file;
     return showDialog<Null>(
@@ -141,8 +144,10 @@ class _ChatUIState extends State<ChatUI> {
                 child: const Text('Take a photo'),
                 onPressed: () async {
                   Navigator.pop(context);
-                  File imageFile =
-                  await ImagePicker.pickImage(source: ImageSource.camera, maxWidth: 1920, maxHeight: 1350);
+                  File imageFile = await ImagePicker.pickImage(
+                      source: ImageSource.camera,
+                      maxWidth: 1920,
+                      maxHeight: 1350);
                   setState(() {
                     file = imageFile;
                   });
@@ -152,7 +157,7 @@ class _ChatUIState extends State<ChatUI> {
                 onPressed: () async {
                   Navigator.of(context).pop();
                   File imageFile =
-                  await ImagePicker.pickImage(source: ImageSource.gallery);
+                      await ImagePicker.pickImage(source: ImageSource.gallery);
                   setState(() {
                     file = imageFile;
                   });

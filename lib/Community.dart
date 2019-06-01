@@ -70,7 +70,10 @@ class _CommunityState extends State<Community> {
             child: ListTile(
               title: Text(
                 "$name",
-                style: TextStyle(color: Colors.black,fontWeight: FontWeight.w500,fontSize: 18),
+                style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.w500,
+                    fontSize: 18),
               ),
               leading: Material(
                 child: CachedNetworkImage(
@@ -98,8 +101,9 @@ class _CommunityState extends State<Community> {
                   color: Color(0xff2979ff),
                 ),
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context){
-                    return ChatUI(chatUserId: name,
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return ChatUI(
+                        chatUserId: name,
                         userId: userid,
                         customId: id,
                         photoUrl: document['photoUrl']);
