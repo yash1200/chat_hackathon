@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "672099068949",
+    "firebase_url": "https://chat-hackathon-ae3bf.firebaseio.com",
+    "project_id": "chat-hackathon-ae3bf",
+    "storage_bucket": "chat-hackathon-ae3bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672099068949:android:885055b36be0183a",
+        "android_client_info": {
+          "package_name": "com.example.chat_hackathon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672099068949-em5rn4p4i5g9n4rbie6is1k74t3p85e1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chat_hackathon",
+            "certificate_hash": "0b875cc037ab8d52096838a96e54e2c62da5a0c3"
+          }
+        },
+        {
+          "client_id": "672099068949-9hfftlsrfh6h81l2bpni358jdi6emkqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQZmJRS9V1K8rHXIPdo7Lp-ybmeGHPnVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672099068949-9hfftlsrfh6h81l2bpni358jdi6emkqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
